@@ -5,4 +5,65 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5372f0;
+}
+.wrapper{
+    background: #fff;
+    max-width: 1000px;
+    overflow-x: hidden;
+    border-radius: 15px;
+    padding: 20px 30px;
+    position: relative;
+}
+.wrapper .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+.icon:first-child{
+    left: 0;
+    background: linear-gradient(90deg, teal 70%, transparent);
+}
+.icon:last-child{
+    right: 0;
+    background: linear-gradient(-90deg, teal 70%, transparent);
+}
+.icon i {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background: #d8d5f2;
+}
+.icon:first-child i {
+    margin-left: 15px;
+}
+.icon:last-child i {
+    margin-right: 15px;
+}
+.wrapper .tabs-box{
+    display: flex;
+    gap: 12px;
+}
+.tabs-box .tab {
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.16rem;
+    border: 1px solid #d8d5f2;
+    background: #f5f4fd;
+    padding: 12px 20px;
+    border-radius: 30px;
 }
