@@ -7,6 +7,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    transition: 0.2s;
 }
 body {
     display: flex;
@@ -33,11 +34,12 @@ body {
 }
 .icon:first-child{
     left: 0;
-    background: linear-gradient(90deg, teal 70%, transparent);
+    background: linear-gradient(90deg, #fff 70%, transparent);
 }
 .icon:last-child{
     right: 0;
-    background: linear-gradient(-90deg, teal 70%, transparent);
+    background: linear-gradient(-90deg, #fff 70%, transparent);
+    justify-content: flex-end;
 }
 .icon i {
     width: 55px;
@@ -46,6 +48,10 @@ body {
     line-height: 55px;
     border-radius: 50%;
     font-size: 1.2rem;
+    border: 1px solid #d8d5f2;
+    cursor: pointer;
+}
+.icon i:hover{
     background: #d8d5f2;
 }
 .icon:first-child i {
@@ -66,4 +72,7 @@ body {
     background: #f5f4fd;
     padding: 12px 20px;
     border-radius: 30px;
+}
+.tabs-box .tab:hover {
+    background: #d8d5f2;
 }
